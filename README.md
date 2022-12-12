@@ -1,7 +1,24 @@
 # express-api
 
 ### raspbery pi terminal commands
+<br/>
+
+### Download PI software/dependencies updates and install
+```shell
+sudo apt update
+```
+```shell
+sudo apt upgrade -y
+```
 <br/> 
+
+### install nodejs
+```shell
+curl -fsSL https://deb.nodesource.com/setup_19.x | sudo -E bash -
+```
+```shell
+sudo apt-get install -y nodejs
+```
 
 ### Clone Repo
 ```shell
@@ -14,24 +31,6 @@ git clone https://github.com/prichardsondev/express-api.git
 cd express-api
 ```
 <br/> 
-
-### Open express-api in VSCode
-```shell
-code .
-```
-<br/> 
-
-### Download software/dependencies updates and install
-```shell
-sudo apt update && sudo apt upgrade
-```
-<br/> 
-
-### install nodejs
-```shell
-curl -fsSL https://deb.nodesource.com/setup_19.x | sudo -E bash - &&\
-sudo apt-get install -y nodejs
-```
 
 ### install express-api dependencies
 ```shell
@@ -47,10 +46,10 @@ npm start
 
 ### Web browser
 ```shell
-localhost:5000
+piname.local:5000
 ```
 ```shell
-localhost:5000/add?v1=10&v2=11
+piname.local:5000/add?v1=10&v2=11
 ```
 <br/> 
 
