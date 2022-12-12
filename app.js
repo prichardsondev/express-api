@@ -1,4 +1,6 @@
 const express = require('express');
+require('dotenv').config();
+const port = process.env.PORT || 5001;
 
 const app = express();
 
@@ -7,8 +9,6 @@ app.get("/", (req, res) => {
 });
 
 app.get("/add", (req, res) => {
-    // let v1 = req.query.v1;
-    // let v2 = req.query.v2;
 
     let {v1,v2} = req.query;
 
@@ -16,4 +16,4 @@ app.get("/add", (req, res) => {
     res.json(sum);
 });
 
-app.listen(3000, () => console.log('Server running on port 3000'));
+app.listen(port, () => console.log(`Browse to localhost:${port}`));
